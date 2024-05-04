@@ -3,19 +3,19 @@ import { ROUTES } from '../../routes/constants'
 
 const Header = () => {
   return (
-    <nav>
-        <div>Titulo</div>
-        <ul>
-            <Link to={ROUTES.HOME}>
-                <li>Home</li>
-            </Link>
-        </ul>
-        <ul>
-            <Link to={ROUTES.POPULAR}>
-            <li>Popular</li>
-            </Link>
-        </ul>
-    </nav>
+      <nav className="flex space-x-4 bg-custom-bg p-4 text-white font-anek font-semibold ">
+          <div className="container mx-auto flex justify-between items-center">
+              <h1 className="text-2xl">Cuevana Zenteno</h1>
+              <div className="flex space-x-4">
+                  <Link to={ROUTES.HOME} className="text-custom-text hover:text-custom-accent">
+                      Home
+                  </Link>
+                  <Link to={ROUTES.POPULAR} className="text-custom-text hover:text-custom-accent">
+                      Popular
+                  </Link>
+              </div>
+          </div>
+      </nav>
   )
 }
 
