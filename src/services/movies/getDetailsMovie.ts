@@ -4,7 +4,7 @@ export const getDetailsMovie = async (movieId: number) => {
     // eslint-disable-next-line
     let res: any;
 
-    const endpoint = `${movieId}?api_key=${import.meta.env.REACT_APP_MDB_API_KEY}&language=en-US`
+    const endpoint = `${movieId}?api_key=${import.meta.env.VITE_MDB_API_KEY}&language=en-US`
 
     await httpInstance
         .get(endpoint)

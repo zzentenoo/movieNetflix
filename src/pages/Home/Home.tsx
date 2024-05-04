@@ -3,7 +3,7 @@ import {movies} from "../../constants/movieMocks.ts";
 import React from "react";
 
 const Home: React.FC = () => {
-    console.log(import.meta.env.REACT_APP_MDB_API_KEY)
+    console.log(import.meta.env.VITE_MDB_API_KEY)
   return (
       <div className='block pl-7'>
         <div className='table max-w-[100%]'>
