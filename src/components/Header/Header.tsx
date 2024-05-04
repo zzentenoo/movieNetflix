@@ -5,7 +5,7 @@ const Header = () => {
   return (
       <nav className="flex space-x-4 bg-custom-bg p-4 text-white font-anek font-semibold ">
           <div className="container mx-auto flex justify-between items-center">
-              <h1 className="text-2xl">Cuevana Zenteno</h1>
+              <h1 className="text-2xl font-bold font-anek">Cuevana Zenteno</h1>
               <div className="flex space-x-4">
                   <Link to={ROUTES.HOME} className="text-custom-text hover:text-custom-accent">
                       Home

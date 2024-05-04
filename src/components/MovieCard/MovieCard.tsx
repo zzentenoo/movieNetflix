@@ -18,7 +18,7 @@ const MovieCard: React.FC<IMovieCard> = ({
 
     const getGenre = (id: number): string => {
         const genre = genresData.genres.find((genre) => genre.id === id);
-        return genre?.name || 'Uknown';
+        return genre?.name || 'Unknown';
     }
 
     const navigateMovies = ( id: number, movieName: string ) => {
