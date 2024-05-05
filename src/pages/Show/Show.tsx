@@ -10,6 +10,7 @@ import {MovieCarousel} from "../../components/MovieCarousel";
 
 const Show = () => {
     const {id} = useParams();
+    const numericId = parseInt(id, 10);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -77,7 +78,7 @@ const Show = () => {
     }, [id]);
 
 
-    const { recmovies } = useRecommendation(id.toString());
+    const { recmovies } = useRecommendation(numericId);
     return (
         <div className="mx-44 shadow-2xl rounded-3xl bg-custom-secondary mt-10 text-amber-100 relative">
             {/* Favorite button on the top right */}
