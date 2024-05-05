@@ -7,7 +7,7 @@ import {usePopularMovies, useTopRated, useUpcoming} from "../../hooks";
 import {Link} from "react-router-dom";
 
 const Home: React.FC = () => {
-
+     //Que rollo!!!
     const {popmovies, poploading, poperrorMovies} = usePopularMovies()
     const { topMovies, topLoading, topErrorMovies } = useTopRated();
     const {upcomingMovies, upcomingErrorMovies, upcomingLoading} = useUpcoming();
