@@ -77,7 +77,7 @@ const Show = () => {
     }, [id]);
 
 
-    const { recmovies, recloading, recerrorMovies } = useRecommendation(id);
+    const { recmovies } = useRecommendation(id.toString());
     return (
         <div className="mx-44 shadow-2xl rounded-3xl bg-custom-secondary mt-10 text-amber-100 relative">
             {/* Favorite button on the top right */}

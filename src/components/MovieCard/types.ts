@@ -1,5 +1,4 @@
 export interface IMovieCard {
-    path: string;
     title: string;
     voteAverage: number;
     genreId: number;
