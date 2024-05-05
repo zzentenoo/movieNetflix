@@ -1,15 +1,15 @@
-import {useTopRated} from "../../hooks";
 import { MovieCard } from "../../components/MovieCard";
+import {useUpcoming} from "../../hooks";
 
-const TopRated = () => {
-   const { topMovies, topLoading, topErrorMovies } = useTopRated();
+const UpComing = () => {
+    const {upcomingMovies, upcomingErrorMovies, upcomingLoading} = useUpcoming();
 
     return (
         <div className='flex flex-col items-center justify-center min-h-screen pt-8 pl-5 bg-page-bg'>
-            {topLoading && <div> Loading... </div>}
-            {topErrorMovies && <div> Error... </div>}
+            {upcomingLoading && <div> Loading... </div>}
+            {upcomingErrorMovies && <div> Error... </div>}
             <div className='w-full max-w-full'>
-                {topMovies.map((movie) => (
+                {upcomingMovies.map((movie) => (
                     <MovieCard
                         key={movie.id}
                         movieId={movie.id}
@@ -24,4 +24,4 @@ const TopRated = () => {
     );
 };
 
-export default TopRated;
+export default UpComing;

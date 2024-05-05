@@ -1,37 +1,15 @@
-import  {useEffect, useState} from "react";
-import {getPopularMovies} from "../../services";
+import {usePopularMovies} from '../../hooks'
 import { MovieCard } from "../../components/MovieCard";
 
 const Popular = () => {
-    const [movies, setMovies] = useState<any[]>([]);
-    const [loading, setLoading] = useState<boolean>(false);
-    const [errorMovies, setErrorMovies] = useState<boolean>(false);
-
-    const getPopular = async () => {
-        await getPopularMovies()
-            .then((res) => {
-                if (res && res.data) {
-                    console.log(res.data, "res");
-                    setMovies(res.data.results);
-                }
-            })
-            .catch((err) => {
-                console.log(err, "err");
-            });
-        setLoading(false);
-    };
-
-    useEffect(() => {
-        setLoading(true);
-        getPopular();
-    }, []);
+    const { popmovies, poploading, poperrorMovies } = usePopularMovies();
 
     return (
         <div className='block pl-5 pt-8 bg-page-bg min-h-screen' >
-            {loading && <div> Loading... </div>}
-            {errorMovies && <div> Error... </div>}
+            {poploading && <div> Loading... </div>}
+            {poperrorMovies && <div> Error... </div>}
             <div className='table max-w-[100%]'>
-                {movies.map((movie) => (
+                {popmovies.map((movie) => (
                     <MovieCard
                         key={movie.id}
                         movieId={movie.id}

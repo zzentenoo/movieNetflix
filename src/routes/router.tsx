@@ -1,7 +1,7 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./constants";
 import PrivateRouter from "./PrivateRouter";
-import { Home, Popular, Show, TopRated } from "../pages";
+import { Home, Popular, Show, TopRated, Favorites, UpComing } from "../pages";
 
 const routes: RouteObject[] = [
     {
@@ -11,7 +11,8 @@ const routes: RouteObject[] = [
             { index: true, element: <Home />},
             { path: ROUTES.POPULAR, element: <Popular />},
             { path: ROUTES.TOPRATED, element: <TopRated />},
-            //{ path: ROUTES.UPCOMING, element: <Upcoming />},
+            { path: ROUTES.FAVORITES, element: <Favorites />},
+            { path: ROUTES.UPCOMING, element: <UpComing />},
             { path: `${ROUTES.SHOW}:id`, element: <Show />}, // /show/:id
         ]
     }

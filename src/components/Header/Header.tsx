@@ -13,8 +13,14 @@ const Header = () => {
                   <Link to={ROUTES.POPULAR} className="text-custom-text hover:text-custom-accent">
                       Popular
                   </Link>
+                  <Link to={ROUTES.UPCOMING} className="text-custom-text hover:text-custom-accent">
+                      Up Coming
+                  </Link>
                   <Link to={ROUTES.TOPRATED} className="text-custom-text hover:text-custom-accent">
                       Top Rated
+                  </Link>
+                  <Link to={ROUTES.FAVORITES} className="text-custom-text hover:text-custom-accent">
+                      Favorites
                   </Link>
               </div>
           </div>

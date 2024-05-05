@@ -16,7 +16,7 @@ export default {
         'custom': '0 4px 6px 5px rgba(156, 53, 135, 0.3), 0 2px 4px 1px rgba(156, 53, 135, 0.3)'
       },
       fontFamily: {
-        'anek': ['Anek Bangla', 'sans-serif'] // Ensure the font name matches
+        'anek': ['Anek Bangla', 'sans-serif']
       }
     },
   },

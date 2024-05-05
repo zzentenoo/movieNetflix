@@ -1,0 +1,1 @@
+export {default as useTopRated} from "./useTopRated.ts";

@@ -27,7 +27,7 @@ const MovieCard: React.FC<IMovieCard> = ({
 
     return (
         <div
-            className="show-box transition-all duration-300 cursor-pointer hover:shadow-custom hover:boxShadow  duration-300 hover:scale-110  "
+            className="show-box transition-all duration-300 scale-90 cursor-pointer hover:shadow-custom hover:boxShadow  duration-300 hover:scale-100  "
             onClick={() => {
                 navigateMovies(movieId,title)
             }}

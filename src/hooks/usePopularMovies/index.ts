@@ -1,0 +1,1 @@
+export {default as usePopularMovies} from "./usePopularMovies.ts";
