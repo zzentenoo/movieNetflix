@@ -33,10 +33,6 @@ const Favorites = () => {
     }, [])
     return (
         <div className="flex flex-col items-center justify-center min-h-screen pt-8 pl-5 bg-page-bg">
-            {loading && <div> Loading... </div>}
-
-
-
             {shows.length > 0 ? (
                 <div className="w-full max-w-full">
                     <div className="font-bold font-anek text-center text-2xl mt-10" > Your favorite collection!</div>
