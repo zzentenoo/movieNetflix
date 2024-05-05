@@ -13,6 +13,9 @@ const Header = () => {
                   <Link to={ROUTES.POPULAR} className="text-custom-text hover:text-custom-accent">
                       Popular
                   </Link>
+                  <Link to={ROUTES.TOPRATED} className="text-custom-text hover:text-custom-accent">
+                      Top Rated
+                  </Link>
               </div>
           </div>
       </nav>

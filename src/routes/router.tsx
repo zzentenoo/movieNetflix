@@ -1,7 +1,7 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./constants";
 import PrivateRouter from "./PrivateRouter";
-import { Home, Popular, Show } from "../pages";
+import { Home, Popular, Show, TopRated } from "../pages";
 
 const routes: RouteObject[] = [
     {
@@ -10,7 +10,7 @@ const routes: RouteObject[] = [
         children: [
             { index: true, element: <Home />},
             { path: ROUTES.POPULAR, element: <Popular />},
-            //{ path: ROUTES.TOPRATED, element: <TopRated />},
+            { path: ROUTES.TOPRATED, element: <TopRated />},
             //{ path: ROUTES.UPCOMING, element: <Upcoming />},
             { path: `${ROUTES.SHOW}:id`, element: <Show />}, // /show/:id
         ]
