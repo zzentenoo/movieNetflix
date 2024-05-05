@@ -6,8 +6,12 @@ function App() {
 
   return (
     <>
+        <div className="min-h-screen bg-page-bg max-h-screen bg-page-bg">
+
+
       <RouterProvider router={router} />
-    </>
+        </div>
+        </>
   )
 }
 

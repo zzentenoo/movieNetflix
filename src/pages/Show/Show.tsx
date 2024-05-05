@@ -75,7 +75,8 @@ const Show = () => {
         getDetails();
     }, [id]);
     return (
-        <div className=" mx-44 shadow-2xl rounded-3xl bg-blue-200 ">
+
+        <div className=" mx-44 shadow-2xl rounded-3xl bg-blue-200 mt-10 bg-custom-secondary text-amber-100">
             <div className="p-8">
                 <div>Show id: { id }</div>
                 <div className="flex">

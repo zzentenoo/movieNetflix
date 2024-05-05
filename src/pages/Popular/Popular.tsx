@@ -27,7 +27,7 @@ const Popular = () => {
     }, []);
 
     return (
-        <div className='block pl-7'>
+        <div className='block pl-5 pt-8 bg-page-bg min-h-screen' >
             {loading && <div> Loading... </div>}
             {errorMovies && <div> Error... </div>}
             <div className='table max-w-[100%]'>

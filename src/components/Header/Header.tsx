@@ -3,7 +3,7 @@ import { ROUTES } from '../../routes/constants'
 
 const Header = () => {
   return (
-      <nav className="flex space-x-4 bg-custom-bg p-4 text-white font-anek font-semibold ">
+      <nav className="flex space-x-6 bg-custom-bg p-4 text-white font-anek font-semibold sticky top-0 z-50 shadow-custom">
           <div className="container mx-auto flex justify-between items-center">
               <h1 className="text-2xl font-bold font-anek">Cuevana Zenteno</h1>
               <div className="flex space-x-4">
